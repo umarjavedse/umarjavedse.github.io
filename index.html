@@ -4,85 +4,166 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Umar Javed · Senior Full Stack AI Engineer</title>
-  <meta name="description" content="Umar Javed is a Senior Full Stack AI Engineer and Principal Software Engineer at Mavric in Lahore, building agentic AI, LLM and RAG products with TypeScript, Node.js, React and Python." />
+  <meta name="description" content="Umar Javed is a Senior Full Stack AI Engineer and Principal Software Engineer at Mavric in Lahore. 9+ years building production web apps; now building agentic AI, RAG and LLM guardrails with TypeScript, Node.js, React and Python." />
+  <meta property="og:type" content="profile" />
   <meta property="og:title" content="Umar Javed · Senior Full Stack AI Engineer" />
   <meta property="og:description" content="Agentic AI, LLMs & RAG · 9+ years building production web apps with TypeScript, Node.js, React and PostgreSQL." />
-  <meta property="og:image" content="https://github.com/umarjavedse.png" />
+  <meta property="og:image" content="https://github.com/umarjavedse.png?size=600" />
   <meta property="og:url" content="https://umarjavedse.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="canonical" href="https://umarjavedse.github.io/" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232f81f7'/><text x='50' y='67' font-size='52' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'>UJ</text></svg>" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Umar Javed",
+    "jobTitle": "Principal Software Engineer",
+    "description": "Senior Full Stack AI Engineer building agentic AI, RAG and LLM products.",
+    "worksFor": { "@type": "Organization", "name": "Mavric" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "COMSATS University Islamabad" },
+    "email": "mailto:umarjavedse@gmail.com",
+    "url": "https://umarjavedse.github.io/",
+    "image": "https://github.com/umarjavedse.png",
+    "sameAs": ["https://www.linkedin.com/in/umarjavedse/", "https://github.com/umarjavedse"],
+    "knowsAbout": ["Agentic AI", "Retrieval-Augmented Generation", "LLM guardrails", "TypeScript", "Node.js", "React", "PostgreSQL", "pgvector", "AWS"]
+  }
+  </script>
   <style>
     :root {
-      --bg: #0b0f17; --panel: #121826; --line: #1f2737; --text: #e6e9ef; --muted: #98a2b3;
-      --accent: #2f81f7; --accent-2: #8b5cf6; --radius: 14px;
+      --bg: #0b0f17; --bg-2: #0e1420; --panel: #121826; --line: #1f2737; --text: #e6e9ef; --muted: #98a2b3;
+      --accent: #2f81f7; --accent-2: #8b5cf6; --good: #22c55e; --radius: 14px;
     }
     @media (prefers-color-scheme: light) {
-      :root { --bg: #f7f8fb; --panel: #ffffff; --line: #e4e7ee; --text: #101828; --muted: #5b6474; }
+      :root { --bg: #f7f8fb; --bg-2: #eef1f6; --panel: #ffffff; --line: #e4e7ee; --text: #101828; --muted: #5b6474; }
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    .skip { position: absolute; left: -999px; } .skip:focus { left: 16px; top: 12px; z-index: 99; background: var(--panel); padding: 8px 12px; }
+
     nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px);
-      background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--line); }
+      background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom: 1px solid var(--line); }
     nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
-    nav .brand { font-weight: 700; color: var(--text); letter-spacing: .2px; }
-    nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+    nav .brand { font-weight: 700; color: var(--text); }
+    nav ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
     nav ul a { color: var(--muted); }
-    header { padding: 88px 0 64px; }
-    .hero { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+    nav ul a:hover { color: var(--text); text-decoration: none; }
+
+    header { padding: 84px 0 56px; }
+    .hero { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
     .eyebrow { color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; }
-    h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.08; margin: 10px 0 18px; letter-spacing: -1px; }
-    h1 span { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .lead { font-size: 19px; color: var(--muted); max-width: 600px; margin: 0 0 28px; }
-    .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover;
-      border: 3px solid var(--line); box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent); }
+    h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.06; margin: 10px 0 18px; letter-spacing: -1.2px; }
+    .grad { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { font-size: 19px; color: var(--muted); max-width: 620px; margin: 0 0 26px; }
+    .avatar { width: 190px; height: 190px; border-radius: 50%; object-fit: cover; border: 3px solid var(--line);
+      box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent); }
     .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 10px;
-      font-weight: 600; font-size: 15px; border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+    .btn { display: inline-flex; align-items: center; padding: 11px 18px; border-radius: 10px; font-weight: 600; font-size: 15px;
+      border: 1px solid var(--line); color: var(--text); background: var(--panel); }
     .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
     .btn:hover { text-decoration: none; transform: translateY(-1px); }
-    section { padding: 56px 0; border-top: 1px solid var(--line); }
-    h2 { font-size: 28px; margin: 0 0 24px; letter-spacing: -.4px; }
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 28px; }
-    .stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
-    .stat b { display: block; font-size: 28px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 22px; color: var(--muted); font-size: 14px; }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 44px; }
+    .stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
+    .stat b { display: block; font-size: 28px; letter-spacing: -.5px; }
     .stat span { color: var(--muted); font-size: 14px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
-    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
-    .card h3 { margin: 0 0 8px; font-size: 18px; }
-    .card p { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
-    .tags li { font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-    .job { display: grid; grid-template-columns: 180px 1fr; gap: 24px; }
-    .job .when { color: var(--muted); font-size: 15px; }
-    .job ul { margin: 10px 0 0; padding-left: 20px; }
-    .job li { margin-bottom: 8px; }
+
+    section { padding: 64px 0; border-top: 1px solid var(--line); }
+    section.alt { background: var(--bg-2); }
+    h2 { font-size: 30px; margin: 0 0 8px; letter-spacing: -.5px; }
+    .sub { color: var(--muted); margin: 0 0 32px; max-width: 680px; }
+    h3 { margin: 0 0 8px; font-size: 19px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .muted { color: var(--muted); }
+    .small { font-size: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 12px 0 0; list-style: none; }
+    .tags li { font-size: 13px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+    .label { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+
+    /* Case study */
+    .case { display: grid; grid-template-columns: 1.05fr 1fr; gap: 28px; align-items: start; }
+    .case h3 { font-size: 24px; letter-spacing: -.3px; }
+    .case dl { margin: 18px 0 0; }
+    .case dt { font-weight: 700; margin-top: 16px; }
+    .case dd { margin: 4px 0 0; color: var(--muted); }
+    .case ul { margin: 6px 0 0; padding-left: 20px; color: var(--muted); }
+    .case li { margin-bottom: 6px; }
+    .diagram { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+    .diagram svg { width: 100%; height: auto; display: block; }
+    .diagram figcaption { color: var(--muted); font-size: 13px; margin-top: 10px; }
+    .results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+    .results div { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--panel); }
+    .results b { display: block; font-size: 20px; }
+    .results span { font-size: 13px; color: var(--muted); }
+
+    /* Timeline */
+    .timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+    .timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+    .timeline > li { position: relative; padding: 0 0 34px 36px; }
+    .timeline > li::before { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 16px; border-radius: 50%;
+      background: var(--bg); border: 3px solid var(--accent); }
+    .timeline .when { color: var(--muted); font-size: 14px; }
+    .timeline h3 { margin: 2px 0 2px; }
+    .timeline .org { color: var(--muted); margin-bottom: 8px; }
+    .timeline ul { margin: 8px 0 0; padding-left: 20px; }
+    .timeline li li { margin-bottom: 6px; }
+    .role { margin-top: 14px; }
+    .role h4 { margin: 0; font-size: 16px; }
+
+    .project h3 { font-size: 17px; }
+    .project .when { font-size: 13px; color: var(--muted); }
+    .project p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+    details { margin-top: 18px; }
+    summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+    .early { columns: 2; column-gap: 32px; margin: 14px 0 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
+    .early li { break-inside: avoid; margin-bottom: 8px; }
+
     .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
-    .skills h3 { font-size: 15px; margin: 0 0 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
-    footer { padding: 48px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
-    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .skills h3 { font-size: 13px; margin: 0; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    .principles p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+
+    .cta { text-align: center; }
+    .cta .buttons { justify-content: center; margin-top: 22px; }
+    footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+    @media (max-width: 860px) {
+      .case, .grid-2 { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 720px) {
       nav ul { display: none; }
-      .hero { grid-template-columns: 1fr; }
+      .hero { grid-template-columns: 1fr; gap: 24px; }
       .avatar { width: 120px; height: 120px; order: -1; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .job { grid-template-columns: 1fr; gap: 6px; }
+      .results { grid-template-columns: 1fr; }
+      .early { columns: 1; }
+      section { padding: 48px 0; }
     }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn:hover { transform: none; } }
+    @media print { nav, .buttons, details summary { display: none; } details > * { display: block; } section { break-inside: avoid; } }
   </style>
 </head>
 <body>
-  <nav>
+  <a class="skip" href="#main">Skip to content</a>
+  <nav aria-label="Main">
     <div class="wrap">
       <a class="brand" href="#">Umar Javed</a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#work">Case studies</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#open-source">Open source</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -90,99 +171,337 @@
   </nav>
 
   <header>
-    <div class="wrap hero">
-      <div>
-        <div class="eyebrow">Senior Full Stack AI Engineer</div>
-        <h1>I build <span>agentic AI</span> products that ship.</h1>
-        <p class="lead">Principal Software Engineer at Mavric in Lahore. 9+ years building production web apps in TypeScript, Node.js, React and PostgreSQL, now focused on LLMs, RAG and AI agents.</p>
-        <div class="buttons">
-          <a class="btn primary" href="https://www.linkedin.com/in/umarjavedse/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          <a class="btn" href="https://github.com/umarjavedse" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="mailto:umarjavedse@gmail.com">Email me</a>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Senior Full Stack AI Engineer</div>
+          <h1>I build <span class="grad">agentic AI</span> products that ship.</h1>
+          <p class="lead">Principal Software Engineer at Mavric. I lead the engineering of AI products end to end: tool-calling agents, retrieval over each customer's own data, and the guardrails that make them safe for real users, on top of 9+ years of production TypeScript, Node.js, React and PostgreSQL.</p>
+          <div class="buttons">
+            <a class="btn primary" href="#work">See case studies</a>
+            <a class="btn" href="https://www.linkedin.com/in/umarjavedse/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/umarjavedse" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="mailto:umarjavedse@gmail.com">Email</a>
+          </div>
+          <div class="meta"><span>📍 Lahore, Pakistan (UTC+5)</span><span>🏢 Mavric</span><span>🎓 BS Software Engineering, COMSATS</span></div>
         </div>
+        <img class="avatar" src="https://github.com/umarjavedse.png?size=380" alt="Portrait of Umar Javed" width="190" height="190" />
       </div>
-      <img class="avatar" src="https://github.com/umarjavedse.png?size=360" alt="Umar Javed" width="180" height="180" />
+      <div class="stats" aria-label="Highlights">
+        <div class="stat"><b>9+</b><span>years shipping production web apps</span></div>
+        <div class="stat"><b>20+</b><span>client and in-house products delivered</span></div>
+        <div class="stat"><b>~40%</b><span>faster team delivery with agent workflows</span></div>
+        <div class="stat"><b>~50%</b><span>less debugging time with LLM root-cause analysis</span></div>
+      </div>
     </div>
   </header>
 
-  <section id="about">
-    <div class="wrap">
-      <h2>About</h2>
-      <p>I'm a full stack engineer who works best in established codebases where speed matters but code quality can't slip. I lead a team of 5 engineers at Mavric and stay hands-on: designing agent architectures, writing the code and reviewing it.</p>
-      <p>Most of my work today is on AI and LLM-powered products: tool-calling agents on the Anthropic (Claude) and OpenAI APIs, retrieval with embeddings in PostgreSQL and pgvector, and the guardrails that make those systems safe to put in front of customers.</p>
-      <div class="stats">
-        <div class="stat"><b>9+</b><span>years in production web apps</span></div>
-        <div class="stat"><b>5</b><span>engineers led at Mavric</span></div>
-        <div class="stat"><b>~40%</b><span>faster shipping with AI workflows</span></div>
-        <div class="stat"><b>~50%</b><span>less debugging time</span></div>
-      </div>
-    </div>
-  </section>
+  <main id="main">
+    <section id="work">
+      <div class="wrap">
+        <h2>Case studies</h2>
+        <p class="sub">Recent work, written up as problem, approach and results.</p>
 
-  <section id="work">
-    <div class="wrap">
-      <h2>Work</h2>
-      <div class="job">
-        <div class="when">Mavric<br />(formerly Devigital Systems)<br />Lahore</div>
-        <div>
-          <h3 style="margin:0">Principal Software Engineer</h3>
-          <ul>
-            <li>Leading engineering of <b>CommerceAssist AI</b>, a support assistant for online stores: shoppers ask questions in a chat widget and get answers from that store's own policies and FAQs, with sources.</li>
-            <li>Its agentic core: tool-calling agents with 20+ tools, RAG with per-store data isolation in PostgreSQL + pgvector, and a guardrails layer that checks answers against sources and blocks prompt injection and data leaks.</li>
-            <li>Moved the team to a spec-driven workflow with Claude Code and Cursor sub-agents, shipping about 40% faster.</li>
-            <li>Cut debugging time roughly in half by pairing Sentry with LLM-based root-cause analysis.</li>
-            <li>Built and maintained multi-tenant SaaS products for international clients in e-commerce, education, HR and analytics.</li>
-            <li>Received the <b>Coaching Champ</b> award for training and mentoring the team.</li>
-          </ul>
+        <article class="case card">
+          <div>
+            <span class="label">Mavric · 2026 – present · Engineering lead</span>
+            <h3>CommerceAssist AI: an AI support assistant for online stores</h3>
+            <dl>
+              <dt>The problem</dt>
+              <dd>Online merchants answer the same shopper questions about shipping, returns and policies again and again. Generic chatbots make things up, and a wrong answer about a refund is worse than no answer.</dd>
+              <dt>The approach</dt>
+              <dd>
+                <ul>
+                  <li><b>Agentic core:</b> a provider-agnostic agent layer on the Anthropic (Claude) and OpenAI SDKs, with local Llama support. Every chat and dashboard action runs through tool-calling agents across 20+ tools.</li>
+                  <li><b>Retrieval per store:</b> RAG on PostgreSQL + pgvector, so each store gets its own knowledge base. Tenant isolation is enforced in the database with row-level security.</li>
+                  <li><b>Guardrails:</b> answers are checked against their sources before they reach a shopper; prompt injection, data leaks and low-confidence answers are blocked, and personal data is redacted from logs.</li>
+                  <li><b>Delivery:</b> a spec-driven workflow with custom Claude Code agents and skills, MCP integrations for Jira and Railway, and test suites that must pass before every release.</li>
+                </ul>
+              </dd>
+              <dt>Stack</dt>
+              <dd>TypeScript · Node.js (Fastify) · GraphQL · React · PostgreSQL · pgvector · Claude & OpenAI APIs · Railway</dd>
+            </dl>
+          </div>
+          <figure class="diagram" style="margin:0">
+            <svg viewBox="0 0 420 470" role="img" aria-labelledby="arch-title arch-desc">
+              <title id="arch-title">CommerceAssist AI architecture</title>
+              <desc id="arch-desc">A shopper message flows from the chat widget to the API, then to the agent layer which calls tools and retrieves from a per-store knowledge base, then through guardrails before the answer with sources goes back.</desc>
+              <defs>
+                <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M0,0 L10,5 L0,10 z" fill="#8b95a7"/>
+                </marker>
+              </defs>
+              <style>
+                .bx { fill: none; stroke: #2f81f7; stroke-width: 1.5; }
+                .bx2 { fill: none; stroke: #8b5cf6; stroke-width: 1.5; }
+                .bx3 { fill: none; stroke: #22c55e; stroke-width: 1.5; }
+                .t { font: 600 13px system-ui, sans-serif; fill: currentColor; }
+                .s { font: 11.5px system-ui, sans-serif; fill: #8b95a7; }
+                .ln { stroke: #8b95a7; stroke-width: 1.4; fill: none; marker-end: url(#arr); }
+              </style>
+              <g style="color: var(--text)">
+                <rect class="bx" x="110" y="8" width="200" height="46" rx="10"/>
+                <text class="t" x="210" y="29" text-anchor="middle">Chat widget</text>
+                <text class="s" x="210" y="45" text-anchor="middle">embedded on the store</text>
+                <path class="ln" d="M210 54 V82"/>
+                <rect class="bx" x="110" y="84" width="200" height="46" rx="10"/>
+                <text class="t" x="210" y="105" text-anchor="middle">API</text>
+                <text class="s" x="210" y="121" text-anchor="middle">Fastify · GraphQL</text>
+                <path class="ln" d="M210 130 V158"/>
+                <rect class="bx2" x="70" y="160" width="280" height="62" rx="10"/>
+                <text class="t" x="210" y="183" text-anchor="middle">Agent layer</text>
+                <text class="s" x="210" y="200" text-anchor="middle">Claude · OpenAI · local Llama</text>
+                <text class="s" x="210" y="214" text-anchor="middle">tool calling across 20+ tools</text>
+                <path class="ln" d="M150 222 L95 262"/>
+                <path class="ln" d="M270 222 L325 262"/>
+                <rect class="bx2" x="8" y="264" width="180" height="62" rx="10"/>
+                <text class="t" x="98" y="287" text-anchor="middle">Store knowledge</text>
+                <text class="s" x="98" y="303" text-anchor="middle">RAG · pgvector</text>
+                <text class="s" x="98" y="317" text-anchor="middle">row-level security per store</text>
+                <rect class="bx2" x="232" y="264" width="180" height="62" rx="10"/>
+                <text class="t" x="322" y="287" text-anchor="middle">Store tools</text>
+                <text class="s" x="322" y="303" text-anchor="middle">policies, orders,</text>
+                <text class="s" x="322" y="317" text-anchor="middle">dashboard actions</text>
+                <path class="ln" d="M98 326 L165 364"/>
+                <path class="ln" d="M322 326 L255 364"/>
+                <rect class="bx3" x="70" y="366" width="280" height="46" rx="10"/>
+                <text class="t" x="210" y="387" text-anchor="middle">Guardrails</text>
+                <text class="s" x="210" y="403" text-anchor="middle">source check · injection · leaks · PII redaction</text>
+                <path class="ln" d="M210 412 V440"/>
+                <text class="t" x="210" y="458" text-anchor="middle">Answer with sources → shopper</text>
+              </g>
+            </svg>
+            <figcaption>Simplified architecture. Client-specific details are left out.</figcaption>
+          </figure>
+        </article>
+
+        <div class="grid-2" style="margin-top:18px">
+          <article class="card">
+            <span class="label">Mavric · 2025 – present · Team lead</span>
+            <h3>An agent-driven delivery workflow for a 5-person team</h3>
+            <p class="muted"><b>Problem:</b> client work across long-running codebases, with constant pressure to ship faster without letting quality slip.</p>
+            <p class="muted"><b>Approach:</b> I moved the team to spec-driven development with Claude Code and Cursor sub-agents that plan, implement and test features in parallel. I built a custom spec-driven agent and reusable skills for Jira, deployment automation and UI work, and I mentor the team on AI-first engineering.</p>
+            <div class="results">
+              <div><b>~40%</b><span>faster team delivery</span></div>
+              <div><b>Shorter</b><span>onboarding for new engineers</span></div>
+              <div><b>Tests</b><span>gate every release</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <span class="label">Mavric · 2025 – present</span>
+            <h3>LLM root-cause analysis on top of Sentry</h3>
+            <p class="muted"><b>Problem:</b> engineers lost hours reading stack traces and logs before they could even start fixing a bug.</p>
+            <p class="muted"><b>Approach:</b> I paired Sentry monitoring with LLM-based root-cause analysis, so an error comes with a likely cause and the code paths involved, and I folded it into the team's debugging routine.</p>
+            <div class="results">
+              <div><b>~50%</b><span>less debugging time</span></div>
+              <div><b>Faster</b><span>bug report to fix</span></div>
+              <div><b>Owned</b><span>CI/CD and AWS deploys</span></div>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <div class="wrap">
-      <h2>Open-source projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3><a href="https://github.com/umarjavedse/ts-agent-kit" target="_blank" rel="noopener">ts-agent-kit</a></h3>
-          <p>A tiny, dependency-free TypeScript agent loop with tool calling for Claude and OpenAI. Parallel tools, self-correcting errors, retries, and offline tests with a mock model.</p>
-          <ul class="tags"><li>TypeScript</li><li>AI agents</li><li>Claude API</li><li>OpenAI API</li></ul>
-        </article>
-        <article class="card">
-          <h3><a href="https://github.com/umarjavedse/rag-guardrails" target="_blank" rel="noopener">rag-guardrails</a></h3>
-          <p>Guardrails for RAG apps: grounding checks that catch unsupported claims and invented numbers, prompt-injection detection, and secret and PII redaction.</p>
-          <ul class="tags"><li>TypeScript</li><li>RAG</li><li>LLM safety</li></ul>
-        </article>
-        <article class="card">
-          <h3><a href="https://github.com/umarjavedse/node-express-typescript" target="_blank" rel="noopener">node-express-typescript</a></h3>
-          <p>A REST API starter in Node.js with Express, PostgreSQL and TypeScript.</p>
-          <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul>
-        </article>
+    <section id="experience" class="alt">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <p class="sub">From telecom intern to Principal Engineer, always hands-on.</p>
+        <ol class="timeline">
+          <li>
+            <div class="when">Mar 2020 – present · Lahore · Hybrid</div>
+            <h3>Mavric <span class="muted small">(formerly Devigital Systems)</span></h3>
+            <div class="role">
+              <h4>Principal Software Engineer <span class="muted small">· Jul 2024 – present</span></h4>
+              <ul class="muted">
+                <li>Lead a team of 5 engineers building full-stack products with TypeScript, Node.js, React and Python for clients and in-house.</li>
+                <li>Lead engineering of CommerceAssist AI (agents, RAG on pgvector, guardrails, Claude and OpenAI APIs).</li>
+                <li>Introduced agent-driven development with Claude Code and Cursor sub-agents: about 40% faster delivery.</li>
+                <li>Cut debugging time by about 50% with Sentry plus LLM root-cause analysis.</li>
+                <li>Owned the architecture and backend of the Tablecloth platform and tuned PostgreSQL for faster reporting.</li>
+                <li>Own CI/CD pipelines and AWS deployments; work directly with client stakeholders, PMs, designers and QA.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h4>Senior Software Engineer <span class="muted small">· Mar 2020 – Jun 2024</span></h4>
+              <ul class="muted">
+                <li>Built and maintained long-running client products in e-commerce, education, HR and analytics with Node.js (Express, NestJS), React, Next.js, TypeScript and PostgreSQL.</li>
+                <li>Designed schemas, APIs and data pipelines (Signa Capture, HRConnect); built a form-builder admin dashboard; worked on Shopify e-commerce for Bokksu.</li>
+                <li>Started reviewing code and mentoring juniors; received the <b>Coaching Champ</b> award (2023) and was promoted to Principal in 2024.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">Nov 2020 – Nov 2021 · Remote · Part-time</div>
+            <h3>Back End Developer, EVVA Finanzas</h3>
+            <div class="org">Fintech</div>
+            <ul class="muted">
+              <li>Designed and implemented REST APIs that improved integration with third-party services.</li>
+              <li>Built and maintained front-end components for an existing fintech application.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="when">Sep 2017 – Mar 2020 · Lahore</div>
+            <h3>Backend Developer, Securehops</h3>
+            <ul class="muted">
+              <li>Built scalable web and mobile backends with Laravel, Node.js and React across more than a dozen client products.</li>
+              <li>Optimized database queries to cut response times, and designed REST and real-time (WebSocket) APIs.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="when">May 2017 – Sep 2017 · Lahore · Internship</div>
+            <h3>Junior Software Developer, Nexus Telecom</h3>
+            <ul class="muted">
+              <li>Built responsive front-end components for a telecom application and helped debug performance issues.</li>
+            </ul>
+          </li>
+        </ol>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills">
-    <div class="wrap">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div><h3>AI &amp; LLMs</h3><ul class="tags"><li>Agentic AI</li><li>Tool calling</li><li>RAG</li><li>pgvector</li><li>Guardrails</li><li>Claude API</li><li>OpenAI API</li><li>MCP</li></ul></div>
-        <div><h3>Backend</h3><ul class="tags"><li>TypeScript</li><li>Node.js</li><li>NestJS</li><li>Fastify</li><li>Express</li><li>Python</li><li>GraphQL</li><li>REST</li></ul></div>
-        <div><h3>Frontend</h3><ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li></ul></div>
-        <div><h3>Data &amp; Cloud</h3><ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>AWS</li><li>Docker</li><li>Terraform</li><li>CI/CD</li></ul></div>
-        <div><h3>AI dev workflow</h3><ul class="tags"><li>Claude Code</li><li>Cursor</li><li>Spec-driven development</li><li>Sentry</li></ul></div>
+    <section id="projects">
+      <div class="wrap">
+        <h2>Selected client projects</h2>
+        <p class="sub">Products I built or led for clients across sports, analytics, education, HR, e-commerce and advertising.</p>
+        <div class="grid">
+          <article class="card project">
+            <h3>Touchtight</h3><div class="when">Football coaching platform · 2025 – 2026 · Lead</div>
+            <p>Led delivery from requirements to AWS deployment: coaching programs, member management and player progress tracking on a GraphQL API. Query tuning and AI-assisted development helped the platform grow its users by about 20% in a year.</p>
+            <ul class="tags"><li>Node.js</li><li>GraphQL</li><li>React</li><li>MySQL</li><li>AWS</li></ul>
+          </article>
+          <article class="card project">
+            <h3>Tablecloth</h3><div class="when">Business data &amp; analytics · 2023 – 2025 · Architect</div>
+            <p>Full-stack platform for collecting and visualizing organizational data: task and milestone tracking, surveys with real-time results, multi-level company access, and a HubSpot CRM integration. Owned the backend design and PostgreSQL performance.</p>
+            <ul class="tags"><li>Next.js</li><li>NestJS</li><li>PostgreSQL</li><li>HubSpot</li></ul>
+          </article>
+          <article class="card project">
+            <h3>HRConnect</h3><div class="when">HR data platform · 2022 – 2023</div>
+            <p>Ingestion of data from many organizations through a third-party platform, with pipelines that validate, transform and aggregate it in PostgreSQL for real-time analytics.</p>
+            <ul class="tags"><li>NestJS</li><li>PostgreSQL</li><li>Data pipelines</li></ul>
+          </article>
+          <article class="card project">
+            <h3>Signa Capture</h3><div class="when">Student photo albums · 2021 – 2023</div>
+            <p>Backend APIs and PostgreSQL schema for creating custom albums and images for students, with secure authentication and authorization.</p>
+            <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul>
+          </article>
+          <article class="card project">
+            <h3>Form Builder dashboard</h3><div class="when">Online services SaaS · 2020 – 2022</div>
+            <p>Admin dashboard where companies design and manage their own forms, built from reusable React components with Redux state and strict TypeScript and ESLint rules.</p>
+            <ul class="tags"><li>React</li><li>Redux</li><li>TypeScript</li></ul>
+          </article>
+          <article class="card project">
+            <h3>Bokksu</h3><div class="when">Shopify e-commerce · 2020</div>
+            <p>E-commerce features and backend tuning for product listings, checkout and order processing, plus third-party payment and engagement integrations.</p>
+            <ul class="tags"><li>Node.js</li><li>React</li><li>Shopify</li><li>MongoDB</li></ul>
+          </article>
+        </div>
+        <details>
+          <summary>Earlier products at Securehops (2017 – 2020)</summary>
+          <ul class="early">
+            <li><b>Brightbee</b>: ad management for real-estate agents with Google Ads, Facebook and Stripe integrations.</li>
+            <li><b>GOJI</b>: WebSocket APIs for live streaming and in-app gifting.</li>
+            <li><b>Parallel</b>: parking-space finder with real-time availability and reservations.</li>
+            <li><b>Giik</b>: gamified quiz platform with points and leaderboards.</li>
+            <li><b>Lanes</b>: real-time chat for schools and colleges on Firebase.</li>
+            <li><b>Bookself</b>: audio and text book subscriptions with automated renewals.</li>
+            <li><b>KOO</b>: voice recording and social posting platform.</li>
+            <li><b>VALU</b>: product survey and feedback collection across web and mobile.</li>
+            <li><b>KindMill</b>: social platform for learning and teaching (Laravel).</li>
+            <li><b>Mood</b> and <b>Quiz &amp; Go</b>: Laravel backends and CMS for social and quiz apps.</li>
+            <li><b>PARANU</b>: matching app and CMS for pet profiles.</li>
+          </ul>
+        </details>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer id="contact">
-    <div class="wrap">
-      <div>Umar Javed · Lahore, Pakistan</div>
-      <div>
-        <a href="https://www.linkedin.com/in/umarjavedse/" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a href="https://github.com/umarjavedse" target="_blank" rel="noopener">GitHub</a> ·
-        <a href="mailto:umarjavedse@gmail.com">umarjavedse@gmail.com</a>
+    <section id="open-source" class="alt">
+      <div class="wrap">
+        <h2>Open source</h2>
+        <p class="sub">Small, tested, dependency-free libraries that show how I approach agents and LLM safety.</p>
+        <div class="grid">
+          <article class="card">
+            <h3><a href="https://github.com/umarjavedse/ts-agent-kit" target="_blank" rel="noopener">ts-agent-kit ↗</a></h3>
+            <p class="muted">A tiny TypeScript agent loop with tool calling for Claude and OpenAI: parallel tool calls, errors fed back to the model, retries with backoff, step budgets and a mock model for offline tests.</p>
+            <ul class="tags"><li>TypeScript</li><li>AI agents</li><li>13 tests</li><li>v0.1.0</li></ul>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/umarjavedse/rag-guardrails" target="_blank" rel="noopener">rag-guardrails ↗</a></h3>
+            <p class="muted">Guardrails for RAG answers: catches claims the sources don't support and invented numbers, detects prompt injection in retrieved text, and redacts secrets and personal data.</p>
+            <ul class="tags"><li>TypeScript</li><li>RAG</li><li>LLM safety</li><li>14 tests</li><li>v0.1.0</li></ul>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/umarjavedse/node-express-typescript" target="_blank" rel="noopener">node-express-typescript ↗</a></h3>
+            <p class="muted">A REST API starter with Node.js, Express, PostgreSQL and TypeScript.</p>
+            <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul>
+          </article>
+        </div>
       </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <p class="sub">What I use most, grouped by where it fits.</p>
+        <div class="skills">
+          <div><h3>AI &amp; LLMs</h3><ul class="tags"><li>Agentic AI</li><li>Tool calling</li><li>RAG</li><li>pgvector</li><li>LLM guardrails</li><li>Claude API</li><li>OpenAI API</li><li>MCP</li></ul></div>
+          <div><h3>Backend</h3><ul class="tags"><li>TypeScript</li><li>Node.js</li><li>NestJS</li><li>Fastify</li><li>Express</li><li>Python</li><li>GraphQL</li><li>REST</li><li>Laravel</li></ul></div>
+          <div><h3>Frontend</h3><ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li><li>TypeScript</li></ul></div>
+          <div><h3>Data</h3><ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Firebase</li><li>Data pipelines</li></ul></div>
+          <div><h3>Cloud &amp; DevOps</h3><ul class="tags"><li>AWS (EC2, ECS, S3, Lambda)</li><li>Docker</li><li>Terraform</li><li>CI/CD</li><li>Railway</li><li>Heroku</li></ul></div>
+          <div><h3>AI dev workflow</h3><ul class="tags"><li>Claude Code</li><li>Cursor</li><li>Spec-driven development</li><li>Sentry</li><li>Jira</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>How I work</h2>
+        <p class="sub">What teams can expect from me.</p>
+        <div class="principles">
+          <div class="card"><h3>Hands-on lead</h3><p>I'd rather stay in the code than manage from a distance: I design, build and review alongside the team.</p></div>
+          <div class="card"><h3>Speed without slipping</h3><p>I do my best work in established codebases where delivery matters but quality can't drop, and I clean up tech debt as part of normal delivery.</p></div>
+          <div class="card"><h3>AI-first, test-gated</h3><p>Agents plan and write code fast; specs and automated tests decide what actually ships.</p></div>
+          <div class="card"><h3>Teaching the team</h3><p>Mentoring is part of the job. It earned me Mavric's Coaching Champ award and shortens onboarding for new engineers.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap grid-2">
+        <div>
+          <h2>Education</h2>
+          <div class="card" style="margin-top:16px">
+            <h3>BS Software Engineering</h3>
+            <div class="muted">COMSATS University Islamabad, Wah Campus · 2013 – 2017</div>
+            <p class="muted small" style="margin-bottom:0">Chairman of the Punjabi Society; Microsoft Azure workshop certificate.</p>
+          </div>
+        </div>
+        <div>
+          <h2>Recognition</h2>
+          <div class="card" style="margin-top:16px">
+            <h3>🏆 Coaching Champ, Mavric (2023)</h3>
+            <p class="muted small" style="margin-bottom:0">For training and mentoring the engineering team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="alt cta">
+      <div class="wrap">
+        <h2>Let's talk</h2>
+        <p class="sub" style="margin:0 auto">Building something with agents, RAG or LLMs, or a product that needs a hands-on lead? I'm happy to hear about it.</p>
+        <div class="buttons">
+          <a class="btn primary" href="mailto:umarjavedse@gmail.com">umarjavedse@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/umarjavedse/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/umarjavedse" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© 2026 Umar Javed · Lahore, Pakistan</div>
+      <div>Hand-written HTML and CSS, no frameworks · <a href="https://github.com/umarjavedse/umarjavedse.github.io" target="_blank" rel="noopener">Source</a></div>
     </div>
   </footer>
 </body>
