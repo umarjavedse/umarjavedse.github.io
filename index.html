@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umar Javed · Senior Full Stack AI Engineer</title>
+  <meta name="description" content="Umar Javed is a Senior Full Stack AI Engineer and Principal Software Engineer at Mavric in Lahore, building agentic AI, LLM and RAG products with TypeScript, Node.js, React and Python." />
+  <meta property="og:title" content="Umar Javed · Senior Full Stack AI Engineer" />
+  <meta property="og:description" content="Agentic AI, LLMs & RAG · 9+ years building production web apps with TypeScript, Node.js, React and PostgreSQL." />
+  <meta property="og:image" content="https://github.com/umarjavedse.png" />
+  <meta property="og:url" content="https://umarjavedse.github.io/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232f81f7'/><text x='50' y='67' font-size='52' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'>UJ</text></svg>" />
+  <style>
+    :root {
+      --bg: #0b0f17; --panel: #121826; --line: #1f2737; --text: #e6e9ef; --muted: #98a2b3;
+      --accent: #2f81f7; --accent-2: #8b5cf6; --radius: 14px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f7f8fb; --panel: #ffffff; --line: #e4e7ee; --text: #101828; --muted: #5b6474; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    nav .brand { font-weight: 700; color: var(--text); letter-spacing: .2px; }
+    nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+    nav ul a { color: var(--muted); }
+    header { padding: 88px 0 64px; }
+    .hero { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; }
+    h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.08; margin: 10px 0 18px; letter-spacing: -1px; }
+    h1 span { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { font-size: 19px; color: var(--muted); max-width: 600px; margin: 0 0 28px; }
+    .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--line); box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent); }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 10px;
+      font-weight: 600; font-size: 15px; border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    section { padding: 56px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 28px; margin: 0 0 24px; letter-spacing: -.4px; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 28px; }
+    .stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+    .stat b { display: block; font-size: 28px; }
+    .stat span { color: var(--muted); font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+    .tags li { font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+    .job { display: grid; grid-template-columns: 180px 1fr; gap: 24px; }
+    .job .when { color: var(--muted); font-size: 15px; }
+    .job ul { margin: 10px 0 0; padding-left: 20px; }
+    .job li { margin-bottom: 8px; }
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .skills h3 { font-size: 15px; margin: 0 0 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+    footer { padding: 48px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    @media (max-width: 720px) {
+      nav ul { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .avatar { width: 120px; height: 120px; order: -1; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .job { grid-template-columns: 1fr; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#">Umar Javed</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Senior Full Stack AI Engineer</div>
+        <h1>I build <span>agentic AI</span> products that ship.</h1>
+        <p class="lead">Principal Software Engineer at Mavric in Lahore. 9+ years building production web apps in TypeScript, Node.js, React and PostgreSQL, now focused on LLMs, RAG and AI agents.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://www.linkedin.com/in/umarjavedse/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn" href="https://github.com/umarjavedse" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="mailto:umarjavedse@gmail.com">Email me</a>
+        </div>
+      </div>
+      <img class="avatar" src="https://github.com/umarjavedse.png?size=360" alt="Umar Javed" width="180" height="180" />
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>I'm a full stack engineer who works best in established codebases where speed matters but code quality can't slip. I lead a team of 5 engineers at Mavric and stay hands-on: designing agent architectures, writing the code and reviewing it.</p>
+      <p>Most of my work today is on AI and LLM-powered products: tool-calling agents on the Anthropic (Claude) and OpenAI APIs, retrieval with embeddings in PostgreSQL and pgvector, and the guardrails that make those systems safe to put in front of customers.</p>
+      <div class="stats">
+        <div class="stat"><b>9+</b><span>years in production web apps</span></div>
+        <div class="stat"><b>5</b><span>engineers led at Mavric</span></div>
+        <div class="stat"><b>~40%</b><span>faster shipping with AI workflows</span></div>
+        <div class="stat"><b>~50%</b><span>less debugging time</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Work</h2>
+      <div class="job">
+        <div class="when">Mavric<br />(formerly Devigital Systems)<br />Lahore</div>
+        <div>
+          <h3 style="margin:0">Principal Software Engineer</h3>
+          <ul>
+            <li>Leading engineering of <b>CommerceAssist AI</b>, a support assistant for online stores: shoppers ask questions in a chat widget and get answers from that store's own policies and FAQs, with sources.</li>
+            <li>Its agentic core: tool-calling agents with 20+ tools, RAG with per-store data isolation in PostgreSQL + pgvector, and a guardrails layer that checks answers against sources and blocks prompt injection and data leaks.</li>
+            <li>Moved the team to a spec-driven workflow with Claude Code and Cursor sub-agents, shipping about 40% faster.</li>
+            <li>Cut debugging time roughly in half by pairing Sentry with LLM-based root-cause analysis.</li>
+            <li>Built and maintained multi-tenant SaaS products for international clients in e-commerce, education, HR and analytics.</li>
+            <li>Received the <b>Coaching Champ</b> award for training and mentoring the team.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Open-source projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="https://github.com/umarjavedse/ts-agent-kit" target="_blank" rel="noopener">ts-agent-kit</a></h3>
+          <p>A tiny, dependency-free TypeScript agent loop with tool calling for Claude and OpenAI. Parallel tools, self-correcting errors, retries, and offline tests with a mock model.</p>
+          <ul class="tags"><li>TypeScript</li><li>AI agents</li><li>Claude API</li><li>OpenAI API</li></ul>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/umarjavedse/rag-guardrails" target="_blank" rel="noopener">rag-guardrails</a></h3>
+          <p>Guardrails for RAG apps: grounding checks that catch unsupported claims and invented numbers, prompt-injection detection, and secret and PII redaction.</p>
+          <ul class="tags"><li>TypeScript</li><li>RAG</li><li>LLM safety</li></ul>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/umarjavedse/node-express-typescript" target="_blank" rel="noopener">node-express-typescript</a></h3>
+          <p>A REST API starter in Node.js with Express, PostgreSQL and TypeScript.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>AI &amp; LLMs</h3><ul class="tags"><li>Agentic AI</li><li>Tool calling</li><li>RAG</li><li>pgvector</li><li>Guardrails</li><li>Claude API</li><li>OpenAI API</li><li>MCP</li></ul></div>
+        <div><h3>Backend</h3><ul class="tags"><li>TypeScript</li><li>Node.js</li><li>NestJS</li><li>Fastify</li><li>Express</li><li>Python</li><li>GraphQL</li><li>REST</li></ul></div>
+        <div><h3>Frontend</h3><ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li></ul></div>
+        <div><h3>Data &amp; Cloud</h3><ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>AWS</li><li>Docker</li><li>Terraform</li><li>CI/CD</li></ul></div>
+        <div><h3>AI dev workflow</h3><ul class="tags"><li>Claude Code</li><li>Cursor</li><li>Spec-driven development</li><li>Sentry</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>Umar Javed · Lahore, Pakistan</div>
+      <div>
+        <a href="https://www.linkedin.com/in/umarjavedse/" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://github.com/umarjavedse" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="mailto:umarjavedse@gmail.com">umarjavedse@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
